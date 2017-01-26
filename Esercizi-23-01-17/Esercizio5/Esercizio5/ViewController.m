@@ -47,34 +47,11 @@
     for (int j = 0; j < _myArray.count; j++) {
         NSLog(@"Name : %@ - Surname : %@", _myNameArray[j], _mySurnameArray[j]);
     }
-
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
--(NSArray *)orderArray:(NSArray *)array{
-    NSArray *newArray = [array sortedArrayUsingComparator:^NSComparisonResult(NSString  *obj1, NSString  *obj2) {
-    
-        if (obj1.lowercaseString == obj2.lowercaseString) {
-            return NSOrderedSame;
-        } else {
-            if (obj1.lowercaseString < obj2.lowercaseString) {
-                return NSOrderedAscending;
-            } else {
-                return NSOrderedDescending;
-            }
-        }
-    }];
-    NSLog(@"aaaa %@", newArray);
-    return newArray;
-}
-
-
-
 
 @end

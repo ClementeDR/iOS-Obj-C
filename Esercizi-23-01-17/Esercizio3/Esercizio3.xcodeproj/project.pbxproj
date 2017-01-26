@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB2BBEF81E37B0F100CB3B8C /* ScoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2BBEF71E37B0F100CB3B8C /* ScoreTableViewController.m */; };
 		ABF0F08C1E364ACC00648FE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0F08B1E364ACC00648FE3 /* main.m */; };
 		ABF0F08F1E364ACC00648FE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0F08E1E364ACC00648FE3 /* AppDelegate.m */; };
 		ABF0F0921E364ACC00648FE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0F0911E364ACC00648FE3 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB2BBEF61E37B0F100CB3B8C /* ScoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreTableViewController.h; sourceTree = "<group>"; };
+		AB2BBEF71E37B0F100CB3B8C /* ScoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreTableViewController.m; sourceTree = "<group>"; };
 		ABF0F0871E364ACC00648FE3 /* Esercizio3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esercizio3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF0F08B1E364ACC00648FE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABF0F08D1E364ACC00648FE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				ABF0F0981E364ACC00648FE3 /* LaunchScreen.storyboard */,
 				ABF0F09B1E364ACC00648FE3 /* Info.plist */,
 				ABF0F08A1E364ACC00648FE3 /* Supporting Files */,
+				AB2BBEF61E37B0F100CB3B8C /* ScoreTableViewController.h */,
+				AB2BBEF71E37B0F100CB3B8C /* ScoreTableViewController.m */,
 			);
 			path = Esercizio3;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB2BBEF81E37B0F100CB3B8C /* ScoreTableViewController.m in Sources */,
 				ABF0F0921E364ACC00648FE3 /* ViewController.m in Sources */,
 				ABF0F08F1E364ACC00648FE3 /* AppDelegate.m in Sources */,
 				ABF0F08C1E364ACC00648FE3 /* main.m in Sources */,
@@ -307,6 +313,7 @@
 				ABF0F0A01E364ACC00648FE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

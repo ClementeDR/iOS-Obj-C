@@ -7,9 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "ScoreTableViewController.h"
 
 #define PARI 1
 #define DISPARI 0
+
+#define Defaults [NSUserDefaults standardUserDefaults]
+#define Results @"NumberScore"
 
 /*
  Realizzare una app che generi a video un valore di tipo Int random e lo presenti all’utente.
@@ -33,13 +37,14 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
+   
+    [self startGame];
+    UIBarButtonItem *scoreButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(resultButtonPressed)];
     
-    int myNumber = [self getRandomNumberBetween:1 to:100];
     
-    [self question:myNumber];
-    
-}
+    self.navigationItem.rightBarButtonItem = scoreButtonItem;
 
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -47,6 +52,14 @@
 }
 
 #pragma mark - Work
+
+-(void)startGame{
+    
+    int myNumber = [self getRandomNumberBetween:1 to:100];
+    
+    [self question:myNumber];
+
+}
 -(int)getRandomNumberBetween:(int)from to:(int)to {
     return (int)from + arc4random() % (to-from+1);
 }
@@ -69,6 +82,7 @@
     }
     
     [self resultAllert:message];
+    [self saveScore:number messageValue:message];
 }
 
 #pragma mark - Alert
@@ -108,5 +122,54 @@
     [self presentViewController:alertViewController animated:true completion:nil];
 }
 
+
+#pragma mark - Score
+-(void)buttonPlayPressed:(UIButton *)sender{
+    [self startGame];
+}
+
+-(void)resultButtonPressed{
+    NSLog(@"resultButtonPressed");
+    
+    ScoreTableViewController *tableViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ScoreTableViewController"];
+    NSArray *resultArray = [self risultati];
+    [tableViewController setScoresArray:resultArray];
+    
+    //instauro il collegamento tra GVC e SVC
+    tableViewController.delegate = self;
+    
+    
+    //pusho nello stack del navigationViewController
+    [self.navigationController pushViewController:tableViewController animated:true];
+
+}
+
+-(void)saveScore:(int)score messageValue:(NSString*)message{
+    NSMutableArray *array = [[Defaults objectForKey:Results] mutableCopy];
+    if (array == nil) {
+        array = @[].mutableCopy;
+    }
+
+    [array addObject:[NSString stringWithFormat:@"%i -> %@", score, message]];
+    
+    [Defaults setObject:array forKey:Results];
+    [Defaults synchronize];
+}
+
+- (NSArray *)risultati{
+    NSArray *array = [Defaults objectForKey:Results];
+    
+    if (array == nil) {
+        array = @[];
+    }
+    
+    return array;
+}
+
+#pragma mark - ScoreTableViewDelegate
+-(NSArray *)ScoreTableViewFetchResults{
+    NSLog(@"ScoreTableViewFetchResults");
+    return [self risultati];
+}
 
 @end

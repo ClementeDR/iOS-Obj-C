@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#import "ScoreTableViewController.h"
+
+@interface ViewController : UIViewController <ScoreTableViewDelegate>
+
+@property (nonatomic,weak) IBOutlet UIButton *playButton;
 
 
+-(IBAction)buttonPlayPressed:(UIButton*)sender;
 @end
 

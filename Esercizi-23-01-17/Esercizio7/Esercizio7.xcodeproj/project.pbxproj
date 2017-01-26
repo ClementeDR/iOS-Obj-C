@@ -307,6 +307,7 @@
 				ABF0F12C1E3661B500648FE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

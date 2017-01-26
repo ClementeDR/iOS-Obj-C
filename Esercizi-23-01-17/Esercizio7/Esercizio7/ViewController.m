@@ -29,8 +29,10 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
+    _timeCount = 0;
     [self startTimer];
 }
+
 
 
 - (void)didReceiveMemoryWarning {
@@ -78,4 +80,9 @@
     [self.timerLabel setText:[NSString stringWithFormat:@"%@:%@:%@",hourString, minutesString, secondsString ]];
 }
 
+
+#pragma mark - Score
+-(void)resultButtonPressed{
+    NSLog(@"resultButtonPressed");
+}
 @end
