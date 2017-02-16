@@ -10,15 +10,22 @@
 
 #import "Pacco.h"
 #import "Corriere.h"
-@interface ViewController ()
+
+#define Defaults [NSUserDefaults standardUserDefaults]
+@interface ViewController (){
+    NSMutableArray<NSDictionary *> *dizionarioPacchi;
+}
+
 
 @end
+
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
     
     Pacco *pacco = [[Pacco alloc] initWithCodice:@"0001" mittente:@"Clemente" destinatario:@"Matteo" lunghezza:100 altezza:100 profondita:50 andMateriale:MaterialeFerro];
     
@@ -33,15 +40,37 @@
     NSLog(@"\nPacco da spedire: %@", pacco3); 
     */
     
+    dizionarioPacchi = @[].mutableCopy;
+    
+    
     NSMutableArray<Pacco *> *pacchi = @[].mutableCopy;
     for (int i = 0; i < [self getRandomNumberBetween:80 to:110]; i++) {
         NSString *code = [NSString stringWithFormat:@" 000%i", i];
         Pacco *newPacco = [[Pacco alloc] initWithCodice:code mittente:@"Amazon" destinatario:@"Tizio" lunghezza:[self getRandomNumberBetween:1 to:50] altezza:[self getRandomNumberBetween:1 to:50] profondita:[self getRandomNumberBetween:1 to:50] andMateriale:[self getRandomNumberBetween:0 to:2]];
         
+  
+
+        
         [pacchi addObject:newPacco];
+        
+        [dizionarioPacchi addObject:@{@"codice" : [newPacco codice], @"mittente" : [newPacco mittente], @"destinatario" : [newPacco destinatario], @"lunghezza" : @([newPacco lunghezza]), @"altezza" : @([newPacco altezza]), @"profondita" : @([newPacco profondita]), @"materiale" : @([newPacco materiale]), @"volume" : @([newPacco volume]), @"peso" : @([newPacco peso])}];
         
     }
     
+    NSInteger testPeso = 0;
+    
+    for (NSDictionary *dizionario in dizionarioPacchi) {
+        for (NSString *key in dizionario.allKeys) {
+            if ([key isEqualToString:@"peso"]) {
+                testPeso += (NSInteger)dizionario[key];
+            }
+        }
+    }
+    
+    NSLog(@"peso totale %i", testPeso);
+    
+    
+
     NSInteger volumeMinimo = 1000000;
     NSInteger volumeMassimo = 1645964;
     

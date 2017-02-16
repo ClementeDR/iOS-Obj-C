@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB2380D11E5203CA0030F63A /* PacchiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2380D01E5203CA0030F63A /* PacchiTableViewController.m */; };
+		AB2380D31E5210950030F63A /* 1487023348_itunes_ios7_ios_7.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2380D21E5210950030F63A /* 1487023348_itunes_ios7_ios_7.png */; };
+		AB2380D71E5212D40030F63A /* 1487023919_boy.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2380D41E5212D40030F63A /* 1487023919_boy.png */; };
+		AB2380D81E5212D40030F63A /* 1487023973_icon_55.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2380D51E5212D40030F63A /* 1487023973_icon_55.png */; };
+		AB2380D91E5212D40030F63A /* 1487023980_office-13.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2380D61E5212D40030F63A /* 1487023980_office-13.png */; };
+		AB8A75ED1E51F3DE005586E5 /* CorrieriTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8A75EC1E51F3DE005586E5 /* CorrieriTableViewController.m */; };
+		ABA2071B1E51E790004D07AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA2071A1E51E790004D07AC /* main.m */; };
+		ABA2071E1E51E790004D07AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA2071D1E51E790004D07AC /* AppDelegate.m */; };
+		ABA207241E51E790004D07AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA207221E51E790004D07AC /* Main.storyboard */; };
+		ABA207261E51E790004D07AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA207251E51E790004D07AC /* Assets.xcassets */; };
+		ABA207291E51E790004D07AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA207271E51E790004D07AC /* LaunchScreen.storyboard */; };
+		ABA207341E51E7DC004D07AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA207331E51E7DC004D07AC /* ViewController.m */; };
+		ABA207381E51E932004D07AC /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA207371E51E932004D07AC /* Utils.m */; };
+		ABA2073D1E51E9A9004D07AC /* Corriere.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA2073A1E51E9A9004D07AC /* Corriere.m */; };
+		ABA2073E1E51E9A9004D07AC /* Pacco.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA2073C1E51E9A9004D07AC /* Pacco.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB2380CF1E5203CA0030F63A /* PacchiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacchiTableViewController.h; sourceTree = "<group>"; };
+		AB2380D01E5203CA0030F63A /* PacchiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacchiTableViewController.m; sourceTree = "<group>"; };
+		AB2380D21E5210950030F63A /* 1487023348_itunes_ios7_ios_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1487023348_itunes_ios7_ios_7.png; sourceTree = "<group>"; };
+		AB2380D41E5212D40030F63A /* 1487023919_boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1487023919_boy.png; sourceTree = "<group>"; };
+		AB2380D51E5212D40030F63A /* 1487023973_icon_55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1487023973_icon_55.png; sourceTree = "<group>"; };
+		AB2380D61E5212D40030F63A /* 1487023980_office-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1487023980_office-13.png"; sourceTree = "<group>"; };
+		AB8A75EB1E51F3DE005586E5 /* CorrieriTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorrieriTableViewController.h; sourceTree = "<group>"; };
+		AB8A75EC1E51F3DE005586E5 /* CorrieriTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorrieriTableViewController.m; sourceTree = "<group>"; };
+		ABA207161E51E78F004D07AC /* Corrieri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Corrieri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABA2071A1E51E790004D07AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABA2071C1E51E790004D07AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ABA2071D1E51E790004D07AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ABA207231E51E790004D07AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABA207251E51E790004D07AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABA207281E51E790004D07AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABA2072A1E51E790004D07AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABA207321E51E7DC004D07AC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ABA207331E51E7DC004D07AC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ABA207361E51E932004D07AC /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		ABA207371E51E932004D07AC /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		ABA207391E51E9A9004D07AC /* Corriere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Corriere.h; sourceTree = "<group>"; };
+		ABA2073A1E51E9A9004D07AC /* Corriere.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Corriere.m; sourceTree = "<group>"; };
+		ABA2073B1E51E9A9004D07AC /* Pacco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pacco.h; sourceTree = "<group>"; };
+		ABA2073C1E51E9A9004D07AC /* Pacco.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pacco.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABA207131E51E78F004D07AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABA2070D1E51E78F004D07AC = {
+			isa = PBXGroup;
+			children = (
+				ABA207181E51E78F004D07AC /* Corrieri */,
+				ABA207171E51E78F004D07AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABA207171E51E78F004D07AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABA207161E51E78F004D07AC /* Corrieri.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABA207181E51E78F004D07AC /* Corrieri */ = {
+			isa = PBXGroup;
+			children = (
+				ABA207351E51E8EB004D07AC /* Utils */,
+				ABA207301E51E7DC004D07AC /* Models */,
+				ABA207311E51E7DC004D07AC /* View Controlles */,
+				ABA2071C1E51E790004D07AC /* AppDelegate.h */,
+				ABA2071D1E51E790004D07AC /* AppDelegate.m */,
+				ABA207221E51E790004D07AC /* Main.storyboard */,
+				ABA207251E51E790004D07AC /* Assets.xcassets */,
+				ABA207271E51E790004D07AC /* LaunchScreen.storyboard */,
+				ABA2072A1E51E790004D07AC /* Info.plist */,
+				ABA207191E51E78F004D07AC /* Supporting Files */,
+			);
+			path = Corrieri;
+			sourceTree = "<group>";
+		};
+		ABA207191E51E78F004D07AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABA2071A1E51E790004D07AC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABA207301E51E7DC004D07AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABA207391E51E9A9004D07AC /* Corriere.h */,
+				ABA2073A1E51E9A9004D07AC /* Corriere.m */,
+				ABA2073B1E51E9A9004D07AC /* Pacco.h */,
+				ABA2073C1E51E9A9004D07AC /* Pacco.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ABA207311E51E7DC004D07AC /* View Controlles */ = {
+			isa = PBXGroup;
+			children = (
+				ABA207321E51E7DC004D07AC /* ViewController.h */,
+				ABA207331E51E7DC004D07AC /* ViewController.m */,
+				AB8A75EB1E51F3DE005586E5 /* CorrieriTableViewController.h */,
+				AB8A75EC1E51F3DE005586E5 /* CorrieriTableViewController.m */,
+				AB2380CF1E5203CA0030F63A /* PacchiTableViewController.h */,
+				AB2380D01E5203CA0030F63A /* PacchiTableViewController.m */,
+			);
+			path = "View Controlles";
+			sourceTree = "<group>";
+		};
+		ABA207351E51E8EB004D07AC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AB2380D41E5212D40030F63A /* 1487023919_boy.png */,
+				AB2380D51E5212D40030F63A /* 1487023973_icon_55.png */,
+				AB2380D61E5212D40030F63A /* 1487023980_office-13.png */,
+				AB2380D21E5210950030F63A /* 1487023348_itunes_ios7_ios_7.png */,
+				ABA207361E51E932004D07AC /* Utils.h */,
+				ABA207371E51E932004D07AC /* Utils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABA207151E51E78F004D07AC /* Corrieri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABA2072D1E51E790004D07AC /* Build configuration list for PBXNativeTarget "Corrieri" */;
+			buildPhases = (
+				ABA207121E51E78F004D07AC /* Sources */,
+				ABA207131E51E78F004D07AC /* Frameworks */,
+				ABA207141E51E78F004D07AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Corrieri;
+			productName = Corrieri;
+			productReference = ABA207161E51E78F004D07AC /* Corrieri.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABA2070E1E51E78F004D07AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Clemente Di Rosa";
+				TargetAttributes = {
+					ABA207151E51E78F004D07AC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = S4TKN3CAAS;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ABA207111E51E78F004D07AC /* Build configuration list for PBXProject "Corrieri" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABA2070D1E51E78F004D07AC;
+			productRefGroup = ABA207171E51E78F004D07AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABA207151E51E78F004D07AC /* Corrieri */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABA207141E51E78F004D07AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABA207291E51E790004D07AC /* LaunchScreen.storyboard in Resources */,
+				ABA207261E51E790004D07AC /* Assets.xcassets in Resources */,
+				AB2380D71E5212D40030F63A /* 1487023919_boy.png in Resources */,
+				AB2380D31E5210950030F63A /* 1487023348_itunes_ios7_ios_7.png in Resources */,
+				AB2380D81E5212D40030F63A /* 1487023973_icon_55.png in Resources */,
+				ABA207241E51E790004D07AC /* Main.storyboard in Resources */,
+				AB2380D91E5212D40030F63A /* 1487023980_office-13.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABA207121E51E78F004D07AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABA2073E1E51E9A9004D07AC /* Pacco.m in Sources */,
+				ABA2071E1E51E790004D07AC /* AppDelegate.m in Sources */,
+				ABA207341E51E7DC004D07AC /* ViewController.m in Sources */,
+				ABA2071B1E51E790004D07AC /* main.m in Sources */,
+				AB8A75ED1E51F3DE005586E5 /* CorrieriTableViewController.m in Sources */,
+				AB2380D11E5203CA0030F63A /* PacchiTableViewController.m in Sources */,
+				ABA2073D1E51E9A9004D07AC /* Corriere.m in Sources */,
+				ABA207381E51E932004D07AC /* Utils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ABA207221E51E790004D07AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABA207231E51E790004D07AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ABA207271E51E790004D07AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABA207281E51E790004D07AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABA2072B1E51E790004D07AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABA2072C1E51E790004D07AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABA2072E1E51E790004D07AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S4TKN3CAAS;
+				INFOPLIST_FILE = Corrieri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clementedirosa.Corrieri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ABA2072F1E51E790004D07AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S4TKN3CAAS;
+				INFOPLIST_FILE = Corrieri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clementedirosa.Corrieri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABA207111E51E78F004D07AC /* Build configuration list for PBXProject "Corrieri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABA2072B1E51E790004D07AC /* Debug */,
+				ABA2072C1E51E790004D07AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABA2072D1E51E790004D07AC /* Build configuration list for PBXNativeTarget "Corrieri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABA2072E1E51E790004D07AC /* Debug */,
+				ABA2072F1E51E790004D07AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABA2070E1E51E78F004D07AC /* Project object */;
+}
